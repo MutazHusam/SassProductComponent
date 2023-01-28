@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 48px;
+  row-gap: 48px;
+  align-items: center;
+  justify-content: center;
+  padding-right: 12px;
+  /* overflow: hidden; */
+}
+
+.imgWrapper {
+  background: #aaa;
+  width: 387px;
+  height: 243px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.imgWrapper > img {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 10px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 27px;
+  font-family: "Inter", sans-serif;
+  padding-top: 30px;
+  font-size: 24px;
+}
+.info > p {
+  margin: 0 0 0 6px;
+  max-width: 304px;
+  font-weight: 700;
+  font-family: "Inter";
+  font-style: normal;
+  line-height: 30px;
+}
+.info > .details {
+  display: flex;
+  width: 304px;
+  font-family: "Poppins", sans-serif;
+  justify-content: space-between;
+}
+
+.info > .details > div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 7.5px;
+  font-weight: 500;
+  font-size: 0.5em;
+}
+
+.info > button {
+  font-family: "Poppins", sans-serif;
+  width: 234px;
+  height: 49px;
+  background: #8528c8;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 0.66em;
+  line-height: 24px;
+  text-align: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.candidates {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f6f8f9;
+  border-radius: 5px;
+  width: 145.01px;
+  height: 133px;
+  font-family: "Poppins";
+  font-style: normal;
+  text-align: center;
+  color: #000000;
+  margin-left: auto;
+}
+.candidates > span {
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 180%;
+}
+.candidates > p {
+  font-weight: 400;
+  font-size: 0.5em;
+  line-height: 131.5%;
+  width: 100px;
+}
+.candidates > button {
+  cursor: pointer;
+
+  font-weight: 400;
+  font-size: 0.5em;
+  line-height: 131.5%;
+  width: fit-content;
+  /* text-align: center; */
+  margin: 0 auto;
+  border: none;
+  outline: none;
+  background: #f6f8f9;
+  text-decoration: underline;
+}

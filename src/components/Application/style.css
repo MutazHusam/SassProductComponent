@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 35px;
+  font-size: 15px;
+  row-gap: 17px;
+  padding-bottom: 18px;
+  border-bottom: 0.5px solid #C4C4C4;
+}
+.mainContainer > .card {
+  display: flex;
+  padding-right: 3px;
+  /* justify-content: space-between; */
+  column-gap: 39px;
+  font-family: "Poppins";
+  flex-wrap: wrap;
+  row-gap: 40px;
+}
+.mainContainer > .card > .logoWrapper {
+  width: 119px;
+  height: 67px;
+}
+
+.mainContainer > .card > .logoWrapper > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mainContainer > .card > .departmentInfo {
+  display: flex;
+  flex-direction: column;
+  row-gap: 9px;
+  font-family: "Poppins";
+  font-style: normal;
+}
+.mainContainer > .card > .departmentInfo > .title {
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 144%;
+}
+
+.mainContainer > .card > .departmentInfo > .companyName {
+  font-weight: 500;
+  font-size: 0.8em;
+  line-height: 171%;
+  text-decoration-line: underline;
+  color: #22215b;
+  width: fit-content;
+}
+
+.mainContainer > .card > .departmentInfo > .locationInfo {
+  display: flex;
+  column-gap: 30px;
+}
+
+.mainContainer > .card > .departmentInfo > .locationInfo > div {
+  display: flex;
+  column-gap: 9px;
+}
+
+.mainContainer > .card > .departmentInfo > .locationInfo > div > span {
+  font-weight: 400;
+  font-size: 0.66em;
+  line-height: 180%;
+  max-width: 84px;
+}
+
+.mainContainer
+  > .card
+  > .departmentInfo
+  > .locationInfo
+  > .typeOfWork
+  > span
+  > span {
+  font-weight: 600;
+  font-size: 1.1em;
+  line-height: 148%;
+  color: #000000;
+}
+
+.mainContainer > .card > .numericData {
+  margin-left: auto;
+  display: flex;
+  column-gap: 2px;
+}
+.mainContainer > .card > .numericData > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 17px;
+  width: 108px;
+  height: 97px;
+  background: #f6f8f9;
+}
+.mainContainer > .card > .numericData > div:first-of-type {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.mainContainer > .card > .numericData > div:last-of-type {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.mainContainer > .card > .numericData > div > span:first-of-type {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 180%;
+  text-align: center;
+  color: #000000;
+}
+
+.mainContainer > .card > .numericData > div > span:last-of-type {
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 131.5%;
+  /* or 12px */
+  text-align: center;
+  color: #000000;
+}
+.mainContainer > span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.8em;
+  line-height: 24px;
+  text-align: right;
+  letter-spacing: -0.006em;
+  align-self: flex-end;
+  color: #a80000;
+}
+hr{
+  color: #a80000;
+}
