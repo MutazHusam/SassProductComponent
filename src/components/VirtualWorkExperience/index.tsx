@@ -1,5 +1,6 @@
+import { useAppDispatch } from "../../store/store";
 import "./style.css";
-
+import { getPrograms, postOpportunity } from "../../store/programs";
 
 interface MyComponentProps {
   title: string;
@@ -11,7 +12,7 @@ interface MyComponentProps {
   img: any;
 }
 
-const index: React.FC<MyComponentProps> = ({
+const Index: React.FC<MyComponentProps> = ({
   title,
   programmeType,
   durationType,
@@ -20,6 +21,8 @@ const index: React.FC<MyComponentProps> = ({
   candidates,
   img,
 }) => {
+  const dispatch = useAppDispatch();
+
   return (
     <div className="container">
       <div className="imgWrapper">
@@ -47,7 +50,33 @@ const index: React.FC<MyComponentProps> = ({
         </div>
         <button
           onClick={() => {
-            alert("specific Action");
+            // alert("specific Action");
+            dispatch(getPrograms());
+          }}
+        >
+          Get All Program Details
+        </button>
+        <button
+          onClick={() => {
+            // alert("specific Action");
+            dispatch(
+              postOpportunity({
+                title: "title",
+                summary: "summary",
+                description: "description",
+                keySkills: "keySkills",
+                benefits: "benefits",
+                criteria: "criteria",
+                programType: 0,
+                programStartDate: "2023-01-30T20:55:24.096Z",
+                applicationOpenDate: "2023-01-30T20:55:24.096Z",
+                applicationCloseDate: "2023-01-30T20:55:24.096Z",
+                duration: "duration",
+                location: "location",
+                minQualification: 0,
+                maxApplications: 0,
+              })
+            );
           }}
         >
           Post opportunity
@@ -68,4 +97,4 @@ const index: React.FC<MyComponentProps> = ({
   );
 };
 
-export default index;
+export default Index;
